@@ -10,7 +10,7 @@ local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 local npcSpeed = player.Character.Humanoid.WalkSpeed
 local npcSoundId = "rbxassetid://4817657002"
 local soundVolume = 3
-local soundRadius = 20
+local soundRadius = 99
 local npcSize = Vector3.new(9, 9, 9)
 
 local npcList = {}
@@ -99,4 +99,7 @@ end)
 
 player.CharacterRemoving:Connect(onDeath)
 
+while true do
+wait(20)
     createNPC()
+end
