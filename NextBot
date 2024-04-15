@@ -1,12 +1,14 @@
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Debris = game:GetService("Debris")
+local character = game.Players.LocalPlayer
+local Humanoid = character:FindFirstChildOfClass("Humanoid")
 
 local player = Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
-local npcSpeed = 9
+local npcSpeed = Humanoid.WalkSpeed
 local npcSoundId = "rbxassetid://4817657002"
 local soundVolume = 3
 local soundRadius = 20
