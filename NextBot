@@ -99,7 +99,4 @@ end)
 
 player.CharacterRemoving:Connect(onDeath)
 
-while true do
-wait(20)
     createNPC()
-end
