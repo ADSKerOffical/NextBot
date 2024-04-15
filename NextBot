@@ -8,7 +8,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
 local npcSpeed = player.Character.Humanoid.WalkSpeed
-local npcSoundId = "rbxassetid://4817657002"
+local npcSoundId = "rbxassetid://6201426647"
 local soundVolume = 3
 local soundRadius = 99
 local npcSize = Vector3.new(9, 9, 9)
